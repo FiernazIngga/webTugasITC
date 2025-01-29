@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penambahan Buku</title>
+    <link rel="stylesheet" href="/tambahBuku.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Penambahan Buku</h2>
+    
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="judul">Judul Buku:</label>
+        <input type="text" id="judul" name="judul" required>
+
+        <label for="genre">Genre Buku:</label>
+        <input type="text" id="genre" name="genre" required>
+        
+        <label for="penulis">Penulis Buku:</label>
+        <input type="text" id="penulis" name="penulis" required>
+
+        <label for="penerbit">Penerbit Buku:</label>
+        <input type="text" id="penerbit" name="penerbit" required>
+
+        <label for="tahun">Tahun Terbit:</label>
+        <input type="number" id="tahun" name="tahun" min="1900" max="2100" required>
+
+        <label for="isi">Isi Buku:</label>
+        <textarea id="isi" name="isi" required></textarea>
+
+        <div class="aksi">
+            <button type="submit" class="kembali">Kembali</button>
+            <button type="submit" class="tambah">Tambah Buku</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="/js_admin/tambahBuku.js"></script>
+</body>
+</html>

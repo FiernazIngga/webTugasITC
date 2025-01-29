@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+
+
+.container-nav {
+    height: 3em;
+    width: 100%;
+    background-color: #232946;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0px 10px 20px  rgba(0, 0, 0, 0.5);
+}
+
+.container-nav div:nth-child(1) h1 {
+    color: #fffffe;
+}
+
+.container-nav div:nth-child(2) ul {
+    display: flex;
+}
+
+.container-nav div:nth-child(2) ul li, a {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 20px;
+    color: #fffffe;
+}
+
+.container-nav div:nth-child(3) {
+    display: none;
+}
+
+.container-nav div:nth-child(3) div:nth-child(1) {
+    background: #fffffe;
+    width: 30px;
+    height: 3px;
+    transform-origin: left;
+    transition: all .5s;
+}
+.container-nav div:nth-child(3) div:nth-child(2) {
+    background: #fffffe;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .5s;
+}
+.container-nav div:nth-child(3) div:nth-child(3) {
+    background: #fffffe;
+    width: 30px;
+    height: 3px;
+    transform-origin: left;
+    transition: all .5s;
+}
+
+.container-nav .hamburger {
+    padding-right: 25px;
+}
+
+@media screen and (max-width: 990px) {
+    .container-nav div:nth-child(1) h1 {
+        font-size: 20px;
+    }
+    .container-nav div:nth-child(3) {
+        display: block;
+    }
+    .container-nav div:nth-child(2) ul .dasbord {
+        color: #fffffe;
+        background-color: transparent;
+    }
+    .container-nav div:nth-child(2) ul {
+        flex-direction: column;
+        top: 3em;
+        position: absolute;
+        left: 0;
+        background-color: #232946;
+        right: 0;
+        text-align: center;
+        overflow: hidden;
+        transition: .5s all;
+        max-height: 0;
+    }
+    .container-nav div:nth-child(2) ul li {
+        padding: 10px;
+    }
+}
+
+#iniBodyCard {
+    height: auto;
+    padding: 2em;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fffffe;
+}
+
+.judulHalBuku {
+    text-align: center;
+}
+
+.containerBuku {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 16em);
+}
+
+.cardBuku {
+    background-color: #fffffe;
+    height: 15em;
+    width: 15em;
+    box-sizing: border-box;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.dotfitur {
+    display: flex;
+    height: auto;
+    padding: 5px;
+}
+
+.dot:nth-child(1), .dot:nth-child(2), .dot:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.dot:nth-child(1) {
+    margin-left: 15px;
+}
+
+.dot:nth-child(2) {
+    background-color: rgb(207, 207, 40);
+}
+
+.dot:nth-child(3) {
+    background-color: green;
+}
+
+.cardImage {
+    width: 15em;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBuku h1 {
+    text-align: center;
+    display: flex;
+    font-size: 15px;
+    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+    color: #2e2f3e;
+}
+
+.iniLihat {
+    width: 100%;
+    display: none;
+    height: 100vh;
+    background-color: #0f0e17;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.keteranganBuku {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garisBuku {
+    height: 15px;
+    width: 2px;
+    border-radius: 5px;
+    margin: 5px 3px;
+    background-color: black;
+}
+
+.aksiBuku {
+    width: 15em;
+    display: flex;
+    justify-content: center;
+}
+
+.aksiBuku a{
+    margin: 5px;
+    text-decoration: none;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #52daff;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+}
+.aksiBuku a:hover {
+    background-color: #00c0f5;
+}
+
+@media screen and (max-width: 990px) {
+    .judulHalBuku {
+        font-size: 15px;
+    }
+    .isiPop img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .filter {
+        display: block;
+    }
+    .cariJudul {
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
+    .garisPop {
+        display: none;
+    }
+    .isiPop {
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .keteranganPop h1 {
+        font-size: 15px;
+    }
+    .cariPenulis {
+        margin-bottom: 10px;
+    }
+    #genre {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .containerBuku {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 11em);
+    }
+    .judulHalBuku {
+        font-size: 10px;
+    }
+    .cardBuku {
+        height: 13em;
+        width: 10em;
+    }
+    .cardImage {
+        width: 10em;
+        height: 5em;
+    }
+    .keteranganBuku {
+        flex-direction: column;
+    }
+    .garisBuku {
+        display: none;
+    }
+    .imgBuku {
+        border-radius: 10px;
+        width: 8em;
+    }
+    
+    .cardBuku h1 {
+        font-size: 10px;
+    }
+    .aksiBuku {
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .aksiBuku button:nth-child(1){
+        margin: 5px;
+        width: 70px;
+        border-radius: 5px;
+        background-color: #52daff;
+        border: 0px;
+        cursor: pointer;
+    }
+    .aksiBuku button:nth-child(2){
+        margin: 5px;
+        width: 70px;
+        border-radius: 5px;
+        background-color: #52daff;
+        border: 0px;
+        cursor: pointer;
+    }
+}

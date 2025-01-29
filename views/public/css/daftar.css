@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+* {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+    margin: 0;
+}
+
+.daftarKontainer {
+    background-color: transparent;
+    backdrop-filter: blur(35px);
+    padding: 3em;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 500px;
+}
+
+.kembali {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.daftarKontainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.formKontainer {
+    width: 100%;
+    height: 100%;
+}
+
+.daftarKontainer label {
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.daftarKontainer input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btnKirim {
+    width: 100%;
+    height: auto;
+    display: flex;
+    place-content: center;
+}
+
+.daftarKontainer button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.daftarKontainer button:hover {
+    background-color: #45a049;
+}
+
+.daftarKontainer .login {
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    font-size:18px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p a {
+    text-decoration: none;
+    transition: all .3s;
+    color: black;
+}
+
+.button p:nth-child(1) {
+    margin: 5px;
+    border: 4px solid #45a049;
+    width: 100px;
+    transition: all .3s;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.button p:nth-child(1):hover  {
+    background-color: #45a049;
+}
+
+.button p:nth-child(3):hover {
+    background-color: #45a049;
+}
+
+.button p:nth-child(3) {
+    margin: 5px;
+    border: 4px solid #45a049;
+    width: 100px;
+    transition: all .3s;
+    height: 30px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 990px) {
+    .daftarKontainer {
+        width: 60%;
+    }
+}

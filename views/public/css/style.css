@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+::selection {
+  background-color: rgba(209, 141, 38, 0.6);
+}
+
+body {
+    background-image: url('/gambarUtama/bgBaru.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* navigation */
+
+.navigation {
+    top: 0;
+    background-color: #fcfcfc;
+    position: sticky;
+    box-shadow: 0px 10px 20px  rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all .5s;
+    margin: 0px 0px -25px 0px;
+  }
+  
+  .navigation .container .box-navigation {
+    transition: all .5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    border-radius: 10px;
+    padding: 0 5em;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(1) {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0f0e17;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(2) ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(2) ul li {
+    list-style: none;
+    margin: 0 20px;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(2) ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0f0e17;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(3) {
+    display: none;
+  }
+  
+  .navigation .container .box-navigation .box:nth-child(3) div:nth-child(1) {
+    background: #0f0e17;
+    width: 30px;
+    height: 3px;
+    transform-origin: left;
+    transition: all .5s;
+  }
+  .navigation .container .box-navigation .box:nth-child(3) div:nth-child(2) {
+    background: #0f0e17;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all .5s;
+  }
+  .navigation .container .box-navigation .box:nth-child(3) div:nth-child(3) {
+    background: #0f0e17;
+    width: 30px;
+    height: 3px;
+    transform-origin: left;
+    transition: all .5s;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .navigation .container .box-navigation {
+      padding: 0 2em;
+    }
+    .navigation .container .box-navigation .box:nth-child(1) {
+      font-size: 1.8em;
+    }
+    .navigation .container .box-navigation .box:nth-child(2) {
+      display: flex;
+      position: absolute;
+      right: 10px;
+      top: 120px;
+      opacity: 100;
+      width: 14em;
+      padding-top: 10px;
+      border-radius: 10px;
+      transition: all .5s;
+      background-color: #fcfcfc;
+    }
+    .navigation .container .box-navigation .box:nth-child(2) ul {
+      flex-direction: column;
+    }
+    .navigation .container .box-navigation .box:nth-child(2) ul li {
+      margin-bottom: 10px;
+    }
+    .navigation .container .box-navigation .menuHp.menuActive {
+      opacity: 0;
+    }
+    .navigation .container .box-navigation .box:nth-child(3) {
+      display: block;
+    }
+  }
+
+/* navigation end */
+
+/* home */
+
+#home {
+    height: 100vh;
+    width: 100%;
+}
+
+.containerHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.gambarHome {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+
+.gambarHomebg {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-size: cover;
+  z-index: 1;
+  filter: blur(5px);
+  position: absolute;
+}
+
+.gambarGerakHome {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  display: flex;
+  bottom: 0;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambarGerakHome img {
+  margin-bottom:0em;
+  width: 30em;
+}
+
+.tulisanHome {
+  width: 100%;
+  height: 50%;
+  background-color: #0f0e17;
+}
+
+.tulisanHome h1:nth-child(1) {
+  margin-top: 0.3em;
+  color: white;
+  width: 100%;
+  font-size: 5em;
+  text-align: center;
+}
+
+.tulisanHome h1:nth-child(2) {
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.tulisanHome h1:nth-child(2) span {
+  color: #a7a9be;
+}
+
+@media screen and (max-width: 990px) {
+    .containerHome {
+        margin-top: -5em;
+        flex-direction: column;
+    }
+    .gambarHomeAtas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        /* border: wheat 1px solid; */
+        height: 50%;
+        align-items: center;
+    }
+    .tulisanHome h1:nth-child(1) {
+      font-size: 3em;
+    }
+    
+    .tulisanHome h1:nth-child(2) {
+      font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 660px) {
+  .tulisanHome h1:nth-child(1) {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+  
+  .tulisanHome h1:nth-child(2) {
+    font-size: 1em;
+  }
+}
+
+/* home end */
+
+
+/* About */
+
+#about {
+    height: auto;
+    padding: 6em;
+    box-sizing: border-box;
+    background-color: #fffffe;
+}
+
+.judulAbout {
+    display: flex;
+    place-content: center;
+}
+
+.judulAbout h1 {
+    font-size: 3em;
+    margin-bottom: 1px;
+}
+
+.containerCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardAbout {
+    background-color: #0f0e17;
+    height: auto;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #fffffe;
+    text-align: center;
+}
+
+.cardAbout p {
+    font-family: "Source Serif 4", serif;
+}
+
+@media screen and (max-width: 990px) {
+    #about {
+        height: auto;
+        padding: 6em 1em;
+    }
+    .judulAbout h1 {
+        font-size: 1.5em;
+    }
+    .cardAbout {
+        background-color: transparent;
+        color: #0f0e17;
+        padding: 1em;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+/* About end */
+
+/* Fitur */
+
+#fitur {
+  height: auto;
+  padding: 6em;
+  box-sizing: border-box;
+  background-color: #0f0e17;
+}
+
+.containerfitur {
+  display: flex;
+  height: auto;
+}
+
+.kirifitur {
+  position: sticky;
+  display: flex;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.kirifitur h1 {
+  color: white;
+}
+
+.gambarfitur {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambarfitur img {
+  position: absolute;
+  width: 50%;
+}
+
+.kananfitur {
+  display: grid;
+  gap: 4rem;
+  height: auto;
+  width: 50%;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.cardFitur {
+  background-color: #fffffe;
+  height: 25em;
+  width: 25em;
+  box-sizing: border-box;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.dotfitur {
+  display: flex;
+  height: auto;
+  width: 25em;
+  padding: 10px;
+}
+
+.dot:nth-child(1), .dot:nth-child(2), .dot:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.dot:nth-child(1) {
+  margin-left: 15px;
+}
+
+.dot:nth-child(2) {
+  background-color: rgb(207, 207, 40);
+}
+
+.dot:nth-child(3) {
+  background-color: green;
+}
+
+.cardImage {
+  width: 25em;
+  display: flex;
+  justify-content: center;
+}
+
+.cardFitur img {
+  border-radius: 10px;
+  width: 22em;
+}
+
+.cardFitur h1 {
+  height: 5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e2f3e;
+}
+
+.fitur {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .fitur {
+    display: flex;
+    width: 100%;
+    height: 10em;
+    color: #fffffe;
+    justify-content: center;
+    align-items: center;
+  }
+  .kirifitur {
+    display: none;
+  }
+  .kananfitur {
+    width: 100%;
+  }
+  .cardFitur:nth-child(6) {
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #fitur {
+    padding: 0em;
+    overflow: hidden;
+  }
+  .cardFitur {
+    width: 20em;
+  }
+  .dot:nth-child(1), .dot:nth-child(2), .dot:nth-child(3) {
+    width: 20px;
+  }
+  .cardImage {
+    width: 20em;
+  }
+  .cardFitur img {
+    width: 17em;
+  }
+}
+/* Fitur end */
+
+
+/* Contact */
+
+#baca {
+  height: 10vh;
+  background-color: #a7a9be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontak {
+  width: 100%;
+  background-color: #a7a9be;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.isiJudulKontak h1 {
+  margin-bottom: .8em;
+  color: #fffffe;
+}
+
+.isiTombolKontak {
+  display: flex;
+}
+
+.isiTombolKontak img {
+  width: 1.7em;
+}
+
+.isiTombolKontak .wa {
+  filter: invert(98%) sepia(4%) saturate(1575%) hue-rotate(309deg) brightness(107%) contrast(108%);
+  margin-right: 1em;
+}
+.isiTombolKontak .ig {
+  filter: invert(98%) sepia(4%) saturate(1575%) hue-rotate(309deg) brightness(107%) contrast(108%);
+  margin-right: 1em;
+}
+.isiTombolKontak .email {
+  filter: invert(98%) sepia(4%) saturate(1575%) hue-rotate(309deg) brightness(107%) contrast(108%);
+  margin-right: 1em;
+}
+
+.isiTombolKontak .wa:hover{
+  filter: invert(52%) sepia(89%) saturate(2972%) hue-rotate(86deg) brightness(127%) contrast(117%);
+}
+.isiTombolKontak .ig:hover{
+  filter: invert(25%) sepia(33%) saturate(6758%) hue-rotate(298deg) brightness(101%) contrast(140%);
+}
+.isiTombolKontak .email:hover{
+  filter: invert(51%) sepia(62%) saturate(2384%) hue-rotate(12deg) brightness(99%) contrast(101%);
+}
+.isiTombolKontak .aku:not(:hover){
+  filter: invert(98%) sepia(4%) saturate(1575%) hue-rotate(309deg) brightness(107%) contrast(108%);
+}
+
+/* Contact End */

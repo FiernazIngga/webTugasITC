@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+
+    <div class="daftarKontainer">
+        <h2>Masuk</h2>
+        <div class="formKontainer">
+            <form action="#" method="post" id="formLogin">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Masukkan username">
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan password">
+    
+                <div class="btnKirim">
+                    <button type="submit">Masuk</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="login">
+            <p>Belum punya akun?</p>
+            <div class="button">
+                <p><a href="/">Kembali</a></p>
+                <p>or</p>
+                <p><a href="/daftar">Daftar</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/login.js"></script>
+</body>
+</html>

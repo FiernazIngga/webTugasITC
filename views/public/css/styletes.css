@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fffffe;
+}
+
+.pemberitahuan {
+    margin: 1em;
+    color: #2e2f3e;
+}
+
+.pemberitahuan h1 {
+    font-size: 25px;
+}
+
+.pemberitahuan span {
+    font-size: 20px;
+}
+
+.kembali {
+    margin: 0 2em;
+    width: 5em;
+    background-color: #0f0e17;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 2.5em;
+}
+
+.kembali a {
+    text-decoration: none;
+    color: #fffffe;
+}
+
+.kembali:hover {
+    background-color: #33323f;
+}
+
+.isiBuku {
+    padding: 5em;
+}
+
+.isiBuku h1 {
+    color: #0f0e17;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.isiBuku p {
+    color: #0f0e17;
+    text-align: center;
+}
+
+@media (max-width: 660px) {
+    .isiBuku {
+        padding: 2em;
+    }
+}
