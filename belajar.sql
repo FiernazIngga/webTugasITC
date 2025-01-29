@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 29, 2025 at 09:38 AM
+-- Generation Time: Jan 29, 2025 at 09:45 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -120,11 +120,11 @@ CREATE TABLE `pinjambuku` (
 --
 
 INSERT INTO `pinjambuku` (`idPinjam`, `idUser`, `idBuku`) VALUES
-(12, 17, 24),
-(13, 17, 19),
-(14, 17, 16),
-(15, 17, 17),
-(18, 17, 22);
+(20, 24, 14),
+(21, 24, 15),
+(22, 24, 16),
+(23, 24, 17),
+(24, 24, 18);
 
 -- --------------------------------------------------------
 
@@ -145,7 +145,6 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `namaLengkap`, `emailUser`, `username`, `password`) VALUES
-(17, 'Fiernaz Ingga Pratama', 'prada@gmail.com', 'pir', '123'),
 (24, 'user', 'user@gmail.com', 'user', '123');
 
 --
@@ -184,7 +183,7 @@ ALTER TABLE `buku`
 -- AUTO_INCREMENT for table `pinjambuku`
 --
 ALTER TABLE `pinjambuku`
-  MODIFY `idPinjam` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `idPinjam` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `user`
