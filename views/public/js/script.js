@@ -21,6 +21,51 @@ window.addEventListener('DOMContentLoaded', function(){
   setTimeout(() => {
     preloader.style.transform = 'translate(0%, -100%)';
   }, 3000);
+  setTimeout(() => {
+    document.querySelector('.gambarGerakHome img').style.opacity = '1';
+    document.querySelector('.h1Home').style.opacity = '1';
+    document.querySelector('.h1Home').style.transform = 'translateX(0)';
+    document.querySelector('.h2Home').style.opacity = '1';
+    document.querySelector('.h2Home').style.transform = 'translateX(0)';
+  }, 3000);
+  const abouts = document.querySelectorAll('.about'); 
+  function cekAbout() {
+    abouts.forEach(about => {
+      const cekabout = about.getBoundingClientRect();
+      if (cekabout.top >= 0 && cekabout.bottom <= window.innerHeight) {
+        document.querySelector('.about1').style.opacity = '1';
+        document.querySelector('.about1').style.transform = 'translateY(0)';
+        document.querySelector('.about2').style.opacity = '1';
+        document.querySelector('.about2').style.transform = 'translatex(0)';
+        document.querySelector('.about3').style.opacity = '1';
+        document.querySelector('.about3').style.transform = 'translatex(0)';
+      }
+    });
+  }
+  window.addEventListener('scroll', cekAbout);
+  const fiturs = document.querySelectorAll('.fiturr');
+  function cekFitur(){
+    fiturs.forEach(fitur => {
+      const cekfitur = fitur.getBoundingClientRect();
+      if (cekfitur.top >= 0 && cekfitur.bottom <= innerHeight) {
+        document.querySelector('.judulFitur').style.opacity = '1';
+        document.querySelector('.judulFitur').style.transform = 'translateY(0)';
+        document.querySelector('.fitur1').style.opacity = '1';
+        document.querySelector('.fitur1').style.transform = 'translateX(0)';
+        document.querySelector('.fitur2').style.opacity = '1';
+        document.querySelector('.fitur2').style.transform = 'translateX(0)';
+        document.querySelector('.fitur3').style.opacity = '1';
+        document.querySelector('.fitur3').style.transform = 'translateX(0)';
+        document.querySelector('.fitur4').style.opacity = '1';
+        document.querySelector('.fitur4').style.transform = 'translateX(0)';
+        document.querySelector('.fitur5').style.opacity = '1';
+        document.querySelector('.fitur5').style.transform = 'translateX(0)';
+        document.querySelector('.fitur6').style.opacity = '1';
+        document.querySelector('.fitur6').style.transform = 'translateX(0)';
+      }
+    })
+  }
+  window.addEventListener('scroll', cekFitur);
 })
 
 let hGerak = false;

@@ -18,7 +18,6 @@ document.querySelector('#formLogin').addEventListener('submit', function(){
             localStorage.setItem(`user_${username}`, JSON.stringify(responData.userLogin));
             window.location.href = '/user/dasbord';     
         } else if (responData.sukses === 'admin') {
-            // localStorage.setItem(`user_${username}`, JSON.stringify(responData.userLogin));
             window.location.href = '/admin/dasbordadmin'; 
         } else {
             alert(`Halo Kakkk Username atau Password kakak salah!!`)
