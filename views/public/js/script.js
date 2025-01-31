@@ -7,6 +7,22 @@ const navigasi = document.querySelector(".navigation");
 const bgNavMob = document.querySelector('.navigation .container .box-navigation .box:nth-child(2)');
 const fiturbtn = document.querySelector('#btnpenghilang');
 const munculFitur = document.querySelector('#munculFitur');
+const preloader = document.querySelector(".preloader");
+const h1preloder = document.querySelector('.iniPreloaderh1');
+
+window.addEventListener('DOMContentLoaded', function(){
+  setTimeout(() => {
+    h1preloder.style.opacity = '1';
+  }, 100);
+  setTimeout(() => {
+    h1preloder.style.transition = 'all 1s';
+    h1preloder.style.opacity = '0';
+  }, 2000);
+  setTimeout(() => {
+    preloader.style.transform = 'translate(0%, -100%)';
+  }, 3000);
+})
+
 let hGerak = false;
 
 

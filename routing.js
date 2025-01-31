@@ -22,11 +22,12 @@ const {hapusBuku} = require('./controllers/admin/hapusBukuController')
 http.createServer((req, res) => {
     const url = req.url;
     console.log(url, 'ini url')
-    const extname = path.extname(url);
     let ekstensi = url.split('.');
 
     if (url === '/') {
         routingHtml('./index.html', res);
+    } else if (url === '/error') {
+        routingHtml('./error.html', res);
     } else if (url === '/login') {
         routingHtml('./views/sign/login.html', res);
     } else if (url === '/daftar') {
@@ -110,7 +111,7 @@ http.createServer((req, res) => {
                     filePath = path.join(__dirname, '/views/public/gambar' , url);
                     break;
             }
-            const contentType = getContentType(extname);
+            const contentType = getContentType(file);
             routingStatic(filePath, contentType, res);
         }
     }

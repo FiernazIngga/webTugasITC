@@ -57,7 +57,7 @@ fetch('/user/action/buku')
 
 logoutBtn.addEventListener('click', function(){
     const log = confirm('Apakah anda yakin ingin log out?');
-    log?logout():alert('Anda tidak jadi logout');
+    log ? logout() : alert('Anda tidak jadi logout');
 })
 
 import {logout} from '../logout.js';
